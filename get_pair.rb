@@ -11,8 +11,8 @@ class GetPair
   def run
     check_for_valid_arguments
 
-    file_contents = FileParser::extract(file_name)
-    products      = Products.new(file_contents).parse_products
+    ## there is plenty of opportunity to refactor this
+    products      = Products.new(FileParser::extract(file_name)).parse_products
     get_pairs     = MatchedPairs.new(products, card_balance)
     puts get_pairs.best_result
     get_pairs.best_result  ## repeated this way only to allow our tests to work
