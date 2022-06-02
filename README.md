@@ -4,8 +4,8 @@ Find-Pairs is a tool to find the best pair of products to spend the rest of your
 
 ### Installation
 
-This tool has a dependency on Ruby and RSpec.  Please ensure you have ruby and it is accessible from your command line 
-EX: 
+This tool has a dependency on Ruby (version 3+) and RSpec (version 3.11).  Please ensure you have ruby and it is accessible from your command line 
+
 Ruby
 ```bash
 $ ruby -v
@@ -33,7 +33,6 @@ To use this tool you need to have a txt file of products and a balance amount (i
 
 If you wish to use the shorthand, as exampled below, then you need to ensure find-pair is executable (for *nix/mac do `chmod a+x find-pair`)
 
-EX:
 ```bash
 $ ./find-pair prices.txt 1500
 Candy Bar 500, Detergent 1000
@@ -42,7 +41,6 @@ Candy Bar 500, Detergent 1000
 ### To Run Tests
 To run the tests you only need to ensure you have rspec installed (as mentioned above) and type `rspec` in your command line.
 
-EX:
 ```bash
 $ rspec
 ........
@@ -50,7 +48,3 @@ $ rspec
 Finished in 0.01916 seconds (files took 0.29044 seconds to load)
 10 examples, 0 failures
 ```
-
-
-
-
