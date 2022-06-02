@@ -4,7 +4,7 @@ Find-Pairs is a tool to find the best pair of products to spend the rest of your
 
 ### Installation
 
-This tool has a dependency on Ruby and RSpec.  Please ensure you have ruby and it is accessible from your command line 
+This tool has a dependency on Ruby (version 3+) and RSpec (version 3.11).  Please ensure you have ruby and it is accessible from your command line 
 
 Ruby
 ```bash
