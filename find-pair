@@ -1,0 +1,23 @@
+#!ruby
+# !/usr/bin/env ruby
+
+require_relative 'products'
+require_relative 'matched_pairs'
+require_relative 'file_parser'
+require_relative 'get_pair'
+
+# TODO:
+## check that argv[0] and argv[1] exists
+## move FileParser into it's own file (misnamed? since it is no longer actually parsing?)
+## re-evaluate naming scheme on Products/Product/PairedProducts (also code smells, too much inter-dependency)
+## refactor, especially produce_product_pairs method (is it hard to read/understand?)
+## for portability this could be made as an executable (possibly using https://github.com/loureirorg/rb2exe) or just
+##  a shell script.
+## initially had GetPair in here as FindPair, but realized its difficult to test it that way
+## I'm not super happy with this, but committed to only 2 hours
+
+## with more time this could be turned into a true CLI, maybe contained in docker image or use something like Bashly (https://github.com/DannyBen/bashly)
+
+if $PROGRAM_NAME == __FILE__
+  GetPair.new(ARGV).run
+end
